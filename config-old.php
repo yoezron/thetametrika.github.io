@@ -11,11 +11,11 @@ $CFG->dbname    = 'moodle';
 $CFG->dbuser    = 'root';
 $CFG->dbpass    = '';
 $CFG->prefix    = 'mdl_';
-$CFG->dboptions = array(
-    'dbpersist' => 0,
-    'dbport' => '',
-    'dbsocket' => '',
-    'dbcollation' => 'utf8mb4_unicode_ci',
+$CFG->dboptions = array (
+  'dbpersist' => 0,
+  'dbport' => '',
+  'dbsocket' => '',
+  'dbcollation' => 'utf8mb4_unicode_ci',
 );
 
 $CFG->wwwroot   = 'http://localhost/thetametrika';
@@ -23,14 +23,6 @@ $CFG->dataroot  = 'D:\\xampp\\moodledata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
-
-$CFG->debug = (E_ALL | E_STRICT);   // === DEBUG_DEVELOPER - NOT FOR PRODUCTION SERVERS!
-$CFG->debugdisplay = 1;             // NOT FOR PRODUCTION SERVERS!
-$CFG->showcrondebugging = true;
-$CFG->debugusers = '2';
-$CFG->themedesignermode = true; // NOT FOR PRODUCTION SERVERS!
-
-
 
 require_once(__DIR__ . '/lib/setup.php');
 
